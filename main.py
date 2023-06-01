@@ -53,9 +53,9 @@ def get_metrics():
     """
     metrics = {
         'timestamp': int(datetime.now().timestamp()),
-        '%CPU_Usage': sysmon.getCpuUsagePct(),
-        'CPU_Freq.': sysmon.getCpuFre(),
-        'CPU_Temp.': sysmon.getCpuTemp(),
+        'CPU_Usage': sysmon.getCpuUsagePct(),
+        'CPU_Freq': sysmon.getCpuFre(),
+        'CPU_Temp': sysmon.getCpuTemp(),
         'Total_RAM': int(sysmon.getRAMTotal()/1024/1024),
         'Used_RAM': int(sysmon.getRAMUsage()/1024/1024),
         'Available_RAM': int(sysmon.getRAMUsable()/1024/1024)
