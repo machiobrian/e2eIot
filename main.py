@@ -17,18 +17,6 @@ def get_aws_iot_certs(deviceID): #*******check point1
 
     return root_ca_cert, device_cert, device_private_key
 
-# def get_aws_iot_certs(deviceID):
-#     certs_dir = os.getenv('CERTS_DIR')
-#     root_ca_cert = os.path.join(certs_dir, "systemMonitorAmazonRootCA1.pem")
-#     device_cert = os.path.join(certs_dir, "systemMonitorcertificate.pem.crt")
-#     device_private_key = os.path.join(certs_dir, "systemMonitorprivate.pem.key")
-
-#     assert os.path.exists(root_ca_cert), "Root CA certificate not found"
-#     assert os.path.exists(device_cert), "Device certificate not found"
-#     assert os.path.exists(device_private_key), "Device Private Key Not Found"
-
-#     return root_ca_cert, device_cert, device_private_key
-
 def get_shadow_handler(deviceID):
     """
     Given a deviceID, create a configuration for connecting to 
